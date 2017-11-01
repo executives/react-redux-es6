@@ -80,3 +80,25 @@ This will run the automated build process, start up a webserver, and open the ap
 |webpack| Bundler with plugin system and integrated development server |
 |webpack-dev-middleware| Adds middleware support to webpack |
 |webpack-hot-middleware| Adds hot reloading to webpack |
+
+## Notes
+
+### Redux
+- complex data flows
+- inter-component communication
+- non-heirarchical data
+- many actions
+- same data used in multiple places
+- add Redux when necessary
+
+#### 3 Principles
+- One immutable Store
+-- single source of truth
+- Actions trigger changes
+- State is changed by Reducers -- pure functions
+
+#### Forbidden in Reducers
+- Mutate arguments
+- Perform side effects
+-- e.g. API calls, routing transitions, etc.
+- Call non-pure functions
