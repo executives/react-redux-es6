@@ -9,6 +9,8 @@ import {loadCourses} from './actions/courseActions'; // loads api data at the st
 import {loadAuthors} from './actions/authorActions'; // loads api data at the start of the app (index.js)
 import './styles/styles.css'; // Webpack lets us import CSS like this
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/toastr/build/toastr.min.css';
+
 
 const store = configureStore();
 store.dispatch(loadCourses());
